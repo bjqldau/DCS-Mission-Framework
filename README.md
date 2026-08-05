@@ -1,6 +1,6 @@
 # DCS Mission Framework
 
-Reusable mission templates, documentation, assets and scripts for the **Super Sonic** DCS flying group.
+Reusable mission templates, documentation, assets and scripts for the **Super Sonic** DCS flying group
 
 ## Purpose
 
