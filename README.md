@@ -18,6 +18,19 @@ The repository currently contains the initial project structure and design stand
 
 Read the [Super Sonic Mission Bible](docs/mission-bible.md) for the overall design philosophy and workflow.
 
+### Players
+
+New and returning players should review:
+
+- [Baseline DCS settings](docs/baseline-dcs-settings.md)
+- [New player checklist](docs/new-player-checklist.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Known issues](docs/known-issues/README.md)
+
+The baseline settings guide records configuration choices that can affect mission behaviour, including the F-14 communications-menu problem caused by Easy Communication.
+
+### Mission designers
+
 Core references:
 
 - [Mission standards](docs/mission-standards.md)
@@ -28,6 +41,13 @@ Core references:
 - [Naming conventions](docs/naming-conventions.md)
 - [Scripting guide](docs/scripting-guide.md)
 
+Development records for the current mission:
+
+- [Mission development guide](docs/mission-development/README.md)
+- [Development changelog](docs/mission-development/CHANGELOG.md)
+- [Development log](docs/mission-development/development-log.md)
+- [Development roadmap](docs/mission-development/roadmap.md)
+
 ## Repository structure
 
 ```text
@@ -36,7 +56,10 @@ missions/
   development/    Missions currently being built or tested
   released/       Tested mission releases
 
-docs/             Mission Bible, standards and checklists
+docs/
+  known-issues/         Reproduced DCS and module problems with workarounds
+  mission-development/ Changelog, engineering log and roadmap
+  ...                   Mission Bible, standards, player setup and checklists
 
 assets/
   briefings/      Briefing source material and exported images
@@ -65,10 +88,12 @@ scripts/
 1. Copy the appropriate `.miz` file from `missions/templates/` into `missions/development/`.
 2. Rename it using the project naming convention.
 3. Build the scenario without modifying the stable template.
-4. Test in small increments and keep the briefing synchronized with the mission.
-5. Complete the mission build checklist.
-6. Test multiplayer startup, objectives, radio menu, carrier recovery and completion logic.
-7. Move the tested version to `missions/released/` and create an identifiable release commit or tag.
+4. Record each meaningful change in the development changelog.
+5. Use the development log for design reasoning, investigations and test evidence.
+6. Test in small increments and keep the briefing synchronized with the mission.
+7. Complete the mission build checklist.
+8. Test multiplayer startup, objectives, radio menu, carrier recovery and completion logic.
+9. Move the tested version to `missions/released/` and create an identifiable release commit or tag.
 
 ## Initial roadmap
 
