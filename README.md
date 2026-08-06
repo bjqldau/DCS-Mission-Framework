@@ -18,6 +18,18 @@ The repository currently contains the initial project structure and design stand
 
 Read the [Super Sonic Mission Bible](docs/mission-bible.md) for the overall design philosophy and workflow.
 
+### Players
+
+New and returning players should review:
+
+- [Baseline DCS settings](docs/baseline-dcs-settings.md)
+- [New player checklist](docs/new-player-checklist.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
+The baseline settings guide records configuration choices that can affect mission behaviour, including the F-14 communications-menu problem caused by Easy Communication.
+
+### Mission designers
+
 Core references:
 
 - [Mission standards](docs/mission-standards.md)
@@ -36,7 +48,7 @@ missions/
   development/    Missions currently being built or tested
   released/       Tested mission releases
 
-docs/             Mission Bible, standards and checklists
+docs/             Mission Bible, standards, player setup and checklists
 
 assets/
   briefings/      Briefing source material and exported images
